@@ -1,4 +1,4 @@
-# John says 
+# John says - for Stroustup
 - Ch 1-4 yes 
 - Ch 2.9 No 
 ## Duplicate line 

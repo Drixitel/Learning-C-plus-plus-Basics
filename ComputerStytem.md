@@ -1,10 +1,15 @@
+# Gladdis: CH1
 # Computer 
 - CPU
   - Program
 - Main Memory (RAM)
 - Seconday storage devices 
 - Input devices 
+  - info taken from outward devices
+  - mouse, microphone, etc. 
 - Output Devices 
+  - any info sent out by the computer
+  - CDs, screens, speakers, etc.
 
 
 # The CPU 
@@ -26,7 +31,7 @@
 
 ## Program: 
 - set of instructions that tells the computer how to preform/solve a task
-- The set of instructions = Algorithm 
+- The set of instructions = `Algorithm` 
   - Has steps and are hierarchical
 - stored in memory 
 - fetch/decode/execute cycle
@@ -38,7 +43,7 @@
   - signal is routed to the respective computer component 
   - signal causes an operation 
 
-## Machine Language 
+## `Machine Language` 
 - consists of a sequence of binary numbers (1,0) which is interpreted as commads 
 - Each CPU has its own machine language 
 
@@ -97,3 +102,12 @@
 - Every day tasks 
 - E.g.: 
   - Word, Powerpoint, etc. 
+
+# Source Code, Object Code, and Exectuable Code 
+- A source file has source code
+  - `Helloworld.cpp` is a source file 
+  - The `code` inside this file is the source code. 
+  - More of this see file: `README.md`
+  ### Preprocessor < Compiler < Linker < Execute file
+- IDEs: Integrated Development environments 
+  - These do all the steps mentioned previously at a one click, my program ad-ons have these features. 
