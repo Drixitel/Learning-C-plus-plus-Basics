@@ -130,3 +130,48 @@
     - cin (>>) terminates at a white space 
 - cin.ignore()
 
+# C-string 
+![stuff](Cstring.png "Stored bits of Cstring")
+- Array related
+- Image is holding: 
+  - `char word[10] = "Hello";`
+  - 10 memory cells holding 5 characters 
+- To overwirte a C-string it requires a function 
+  - `strcpy(Cstring, value);`
+  - "String copy" 
+
+- String object vs Cstring 
+  - string obj: 
+    - no worries about having too little memory 
+  - Buffer overrun: 
+    - if the programmer uses a c-string and does not give it enough memory 
+    - the cin will store all of the input values anyway and the ones that don't fill will spill into the following memory cells, overwriting anything previously stored 
+      - can have SERIOUS problems 
+    - Fix: 
+        - use `setw()` or `cin.width()`
+
+  - to read in a line for C-stings: 
+    - we cannot use `getline(cin, string)`
+    - we must use `cin.getline()`
+
+# Random Numbers 
+- HEADER FILE NEEDED: <`cstdlib`>
+- `rand()`
+  - function 
+  - requires a seed to generate numbers 
+  - no seed: 
+    - will produce the same stream of numbers each time it's run
+- `srand()`
+  - requires seed and the seed must be positive 
+  - this is done by using `unsigned` types 
+- `time()`
+ - needs header file ctime 
+ - gives a different number each time it is ran bc it is giveing the number of seconds passed from a specific date 
+
+# Limit the Range of a Random Number 
+- Formula: 
+  - random between (1-6)
+  - `number = rand() % maxValue + 1; `
+  - `diceRoll = rand() % 6 + 1; `
+    - modulo will give remainders 0-5 
+    - to get it 1-6 we add 1 
